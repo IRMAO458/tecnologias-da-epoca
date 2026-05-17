@@ -18,20 +18,77 @@
             justify-content:center;
             align-items:center;
 
-            color:rgb(190, 178, 178);
-            font-size:50px;
+            color:rgb(255, 255, 255);
+            font-size:70px;
 
             text-shadow: 3px 3px 10px black;
+            font-family: Georgia, serif;
+            animation: aparecer 2s;
+            text-shadow: 3px 3px 10px black;
         }
-        body{
-            body{
-            margin: 0;
-            padding: 0;
+            
+            img{
+            width: 60%;
+            display: block;
             }
+            body{
+                background: linear-gradient(to right, #c76b7d, #d9d9d9, #6f8edb);
+            }
+                p{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                 line-height: 1.8;
+                }
+
+                img{
+                transition: 0.5s;
+                }
+
+                img:hover{
+                 transform: scale(1.02);
+                }   
+                @keyframes aparecer{
+            from{
+            opacity: 0;
+            transform: translateY(-20px);
+            }
+
+            to{
+            opacity: 1;
+            transform: translateY(0);
+            }    
+        }
+
+        .container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        }
+
+        .container img{
+        width: 200px;
+        }
     </style>
 </head>
 <body>
     <h1>Tecnologias da época</h1>
+    <div class="container">
+        <p>1. Transmissão Global via Satélite
+        A Copa de 1966 foi a primeira a utilizar transmissões via satélite em grande escala, marcando o início da globalização televisiva do futebol.
+        A distribuição das imagens foi viabilizada por satélites de comunicação recém-lançados, como o famoso Intelsat I (apelidado de Early Bird), o primeiro satélite comercial de telecomunicações do mundo.
+        Antes disso, as imagens de torneios mundiais chegavam a outros continentes por meio do transporte aéreo de rolos de filmes, o que atrasava a exibição em dias. Com os satélites, emissoras da Europa puderam enviar os sinais rapidamente (alguns até ao vivo) para as Américas.
+        2. A Invenção do "Replay" (Action Replay)
+        Hoje é impossível imaginar uma partida de futebol sem rever os gols ou os lances polêmicos, mas foi em 1966 que isso se tornou uma realidade estrutural para o grande público.
+        A BBC inovou no uso prático do videotape, implementando um sistema rudimentar que permitia reprisar os melhores momentos da partida poucos segundos após eles acontecerem.
+        Junto com o replay normal, surgiu a câmera lenta (slow-motion). Ironicamente (ou propositalmente), essa tecnologia foi fundamental na própria final: o icônico "gol fantasma" do inglês Geoff Hurst, em que a bola bateu no travessão, quicou no chão e saiu do gol contra a Alemanha Ocidental, foi incansavelmente reprisado na TV para tentar determinar se a bola havia cruzado ou não a linha.
+        3. A Transição para a Captação a Cores
+        A maioria absoluta do público assistiu à Copa de 1966 em televisores preto e branco (a televisão a cores só estrearia com força nas transmissões ao vivo da Copa de 1970, no México). No entanto, 1966 serviu como laboratório para essa tecnologia.
+        Diversas câmeras de cinema foram espalhadas pelos estádios rodando rolos de filmes a cores de alta resolução.
+        Esse material serviu para a produção do documentário oficial do torneio, chamado "Goal!" (1966). Lançado nos cinemas, foi a primeira vez que milhões de torcedores ao redor do mundo puderam ver a estética vibrante, os uniformes e o verde do gramado de uma Copa com total nitidez.</p>
+
+        <img src="https://maquinadoesporte.com.br/wp-content/uploads/2026/06/willie_mascote_1-1024x512.png" alt="imagem">
+    </div>
     
 </body>
 </html>
